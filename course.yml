@@ -1,7 +1,7 @@
-title            : TAworkshop
-instructors      :
+title            : 2016 TA Data Science Workshop
+instructors      : Stephanie Kovalchik
  - s.a.kovalchik@gmail.com
-description      : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
+description      : This course will give an introduction to data science in R. 
 university       : DataCamp
 difficulty_level : 2
-time_needed      : 1 hour
+time_needed      : 4 hour
