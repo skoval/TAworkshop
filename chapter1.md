@@ -115,7 +115,7 @@ Plot Djokovic's 2015 wins and losses by surface.
 *** =instructions
 - Assume `djokovic`, `dplyr` and `ggplot2` are loaded.
 - Create a factor for wins with labels `Win` and `Loss`.
-- use a graphic appropriate for this type of variable to plot wins and losses by surface.
+- Use a graphic appropriate for this type of variable to plot wins and losses by surface.
 
 *** =hint
 Use `geom_bar`.
@@ -162,10 +162,10 @@ Plot the cumulative percentage of straight-set victories by match number Djokovi
 
 *** =instructions
 - Assume `djokovic`, `dplyr` and `ggplot2` are loaded.
-- Create a variable that indicates a straight set win. 
+- Create a variable that indicates a straight-set win. 
 - Create a match number (from earliest to most recent). 
 - Calculate the cumulative average of straight-set wins.
-- Use a graphic appropriate for this type of variable to plot the cumulative straight-set sins by match number.
+- Use a graphic appropriate for this type of variable to plot the cumulative straight-set wins by match number.
 
 
 *** =hint
