@@ -60,7 +60,7 @@ test_mc(correct = 2, feedback_msgs = c(msg1, msg2, msg3))
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:100 skills:1 key:79c574204a
 
 ## Data Wrangling 
 
@@ -104,7 +104,7 @@ success_msg("Excellent Job!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:100 skills:1 key:1a5c9c5c70
 
 ## Graphics
 
@@ -152,7 +152,7 @@ success_msg("If you have a bar chart of wins and losses by surface, congrats!")
 
 
 
---- type:NormalExercise lang:r xp:200 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:200 skills:1 key:4ea0a4a1f1
 
 ##  Wrangling + Graphics
 
