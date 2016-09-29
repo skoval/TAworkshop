@@ -21,7 +21,7 @@ Use graphics to assess whether a linear model describing how player ranking is r
 *** =hint
 Use `dplyr` and `summarise`
 
-*** =sample_code
+*** =pre_exercise_code
 ```{r}
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 ```
