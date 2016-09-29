@@ -47,7 +47,7 @@ success_msg("Did you reach a conclusion? Great, you are ready for the next exerc
 ```
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:100 skills:1 key:bf4ff8dc0a
 
 ##  Linear Model
 
@@ -94,7 +94,7 @@ success_msg("Ready for the next exercise? Excellent!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:100 skills:1 key:895c70acb4
 
 ##  Influence
 
@@ -146,7 +146,7 @@ success_msg("Keep it up!")
 ```
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:100 skills:1 key:3559047d13
 
 ##  Formula
 
@@ -186,7 +186,7 @@ success_msg("You are really getting this!")
 ```
 
 
---- type:NormalExercise lang:r xp:200 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
+--- type:NormalExercise lang:r xp:200 skills:1 key:b6255776bc
 
 ## Upset Model 
 
