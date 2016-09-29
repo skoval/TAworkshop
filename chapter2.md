@@ -23,6 +23,9 @@ Use `dplyr` and `summarise`
 
 *** =pre_exercise_code
 ```{r}
+library(dplyr)
+library(ggplot2)
+
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 ```
 
