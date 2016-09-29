@@ -67,6 +67,8 @@ Use `lm` and `plot`.
 
 *** =pre_exercise_code
 ```{r}
+library(dplyr)
+
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 
 atp2015 <- atp2015 %>%
@@ -98,7 +100,7 @@ success_msg("Ready for the next exercise? Excellent!")
 
 ##  Influence
 
-Fit a linear model with and without the influential point found in the previous exercise. How much do he model coefficients change?
+Fit a linear model with and without the influential point found in the previous exercise. How much do the model coefficients change?
 
 
 
@@ -115,6 +117,8 @@ Use `coef`
 
 *** =pre_exercise_code
 ```{r}
+library(dplyr)
+
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 
 atp2015 <- atp2015 %>%
@@ -164,6 +168,8 @@ Use `mutate`
 
 *** =pre_exercise_code
 ```{r}
+library(dplyr)
+
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 ```
 
@@ -205,6 +211,8 @@ Use `glm`
 
 *** =pre_exercise_code
 ```{r}
+library(dplyr)
+
 atp2015 <- read.csv(file = "http://on-the-t.com/assets/data/atp2015.csv")
 
 atp2015 <- atp2015 %>%
