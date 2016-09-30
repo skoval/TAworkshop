@@ -96,7 +96,7 @@ Use linear regression to create a single imputation model for height.
 
 *** =instructions
 - Assume the summary dataset for `atp_players` is available in the workspace
-- Fit a linear model on mean aces and country (additive effects only)
+- Fit a linear model on mean aces 
 - Obtain the adjusted R-squared and save it as the object `R2`
 
 
@@ -112,7 +112,7 @@ atp_players <- read.csv(file = "http://on-the-t.com/assets/data/atp_players.csv"
 
 *** =solution
 ```{r}
-fit <- lm(ht ~ ioc + ace_avg, data = atp_players)
+fit <- lm(ht ~ ace_avg, data = atp_players)
 
 summary(fit)
 
@@ -152,7 +152,7 @@ library(ggplot2)
 
 atp_players <- read.csv(file = "http://on-the-t.com/assets/data/atp_players.csv")
 
-fit <- lm(ht ~ ioc + ace_avg, data = atp_players)
+fit <- lm(ht ~ ace_avg, data = atp_players)
 ```
 
 *** =solution
@@ -161,15 +161,14 @@ atp_players$missing <- factor(is.na(atp_players$ht),
 	levels = c(FALSE, TRUE),
 	labels = c("Known", "Missing"))
 
-
 imputed <- predict(fit, newdata = atp_players[is.na(atp_players$ht), ])
 
 atp_players$ht[is.na(atp_players$ht)] <- imputed
 
-atp_players $>$
-	ggplot(aes(x = ht)) %>%
+atp_players %>%
+	ggplot(aes(x = ht)) +
 	geom_density() +
-	facet_wrap(missing)
+	facet_wrap( ~ missing)
 ```
 
 *** =sct
