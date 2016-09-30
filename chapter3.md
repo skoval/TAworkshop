@@ -182,12 +182,12 @@ success_msg("Keep it up!")
 
 ## Multiple Imputation
 
-Conduct a multiple imputation for the variables in the `atp_players` dataset and then fit get a pooled estimate for the height by country. 
+Conduct a multiple imputation for the variables in the `atp_players` dataset and get a pooled estimate for average heights by country. 
 
 
 *** =instructions
 - Assume that the `atp_players` dataset is available
-- Use `mice` with 5 imputed datasets and defaults otherwise
+- Use `mice` with 3 imputed datasets and defaults otherwise
 - Use `lm.mids` to estimate height by country
 - Save the pooled linear model as the object `pooled_height`
 
@@ -204,14 +204,14 @@ atp_players <- read.csv(file = "http://on-the-t.com/assets/data/atp_players.csv"
 
 *** =solution
 ```{r}
-imputed <- mice(atp_players)
+imputed <- mice(atp_players, m = 3)
 
 fits <- lm.mids(
 	ht ~ ioc,
 	data = imputed
 )
 
-pooled_height <- pol(fits)
+pooled_height <- pool(fits)
 
 pooled_height
 ```
