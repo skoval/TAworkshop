@@ -83,7 +83,7 @@ missing_by_country
 ```{r}
 test_object("missing_by_country")
 test_error()
-success_msg("Excellent job!)
+success_msg("Excellent job!")
 ```
 
 
