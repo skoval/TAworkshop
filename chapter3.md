@@ -70,7 +70,7 @@ atp_players <- read.csv(file = "http://on-the-t.com/assets/data/atp_players.csv"
 
 *** =solution
 ```{r}
-missing_by_country %>% atp_players %>%
+missing_by_country <- atp_players %>%
 	group_by(ioc) %>%
 	summarise(
 		freq = mean(is.na(ht)) 
@@ -198,9 +198,7 @@ Use `pool`
 
 *** =pre_exercise_code
 ```{r}
-library(dplyr)
 library(mice)
-
 
 atp_players <- read.csv(file = "http://on-the-t.com/assets/data/atp_players.csv")
 ```
