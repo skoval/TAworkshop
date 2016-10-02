@@ -138,7 +138,7 @@ success_msg("You are really getting this!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:895c70acb4
+--- type:NormalExercise lang:r xp:100 skills:1 key:5390c37818
 
 ##  Principal Components
 
@@ -178,7 +178,7 @@ test_error()
 success_msg("Fabulous!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:895c70acb4
+--- type:NormalExercise lang:r xp:100 skills:1 key:73ecc606bf
 
 ##  Hierarchical Clustering
 
