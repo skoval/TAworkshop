@@ -6,7 +6,7 @@ description : Exercises to Test Concepts in Part 4 of Data Science Workshop
 --- type:NormalExercise lang:r xp:100 skills:1 key:99f5dc3cd37ec9a6b55f72608d8a0ae79735f68a
 ## Preparing Data
 
-Before conducting and machine learning technique we often have to do some pre-processing of our data.
+Before conducting any machine learning we often have to do some pre-processing of our data.
 
 
 *** =instructions
@@ -22,6 +22,7 @@ Use `mice` and `scale`.
 *** =pre_exercise_code
 ```{r}
 library(mice)
+library(dplyr)
 
 match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats.csv")
 ```
@@ -64,6 +65,7 @@ Use `rpart`
 *** =pre_exercise_code
 ```{r}
 library(rpart)
+library(dplyr)
 
 match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats_prepped.csv")
 ```
