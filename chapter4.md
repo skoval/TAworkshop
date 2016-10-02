@@ -64,10 +64,10 @@ Use `rpart`
 
 *** =pre_exercise_code
 ```{r}
-library(rpart)
 library(dplyr)
+library(rpart)
 
-match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats_prepped.csv")
+match_stats <- read.csv("http://on-the-t.com/assets/data/match_stats_prepped.csv")
 ```
 
 
