@@ -112,6 +112,7 @@ Use `randomForest`
 *** =pre_exercise_code
 ```{r}
 library(randomForest)
+library(dplyr)
 
 match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats_prepped.csv")
 ```
@@ -140,7 +141,7 @@ success_msg("You are really getting this!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:5390c37818
+--- type:NormalExercise lang:r xp:100 skills:1 key:895c70acb4
 
 ##  Principal Components
 
@@ -180,7 +181,7 @@ test_error()
 success_msg("Fabulous!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:73ecc606bf
+--- type:NormalExercise lang:r xp:100 skills:1 key:895c70acb4
 
 ##  Hierarchical Clustering
 
@@ -206,7 +207,7 @@ match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats_prep
 ```{r}
 vars <- grep("diff", names(match_stats), val = TRUE)
 
-d <- dist(match_stats_complete[,vars], method = "euclidean")
+d <- dist(match_stats[,vars], method = "euclidean")
 
 tree <- hclust(d, method = "complete")
 
