@@ -29,7 +29,6 @@ match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats.csv"
 
 *** =solution
 ```{r}
-
 numerical <- (match_stats %>% summarise_each(funs(class)) %in% c("integer", "numeric")) & names(match_stats) != "winner"
 
 imputed <- mice(match_stats[,numerical], m = 1)
@@ -37,7 +36,7 @@ imputed <- mice(match_stats[,numerical], m = 1)
 match_stats_complete <- mice::complete(imputed, 1) 
 
 # Replace imputed and scale
-match_stats[,class] <- scale(match_stats_complete)
+match_stats[, numerical] <- scale(match_stats_complete)
 ```
 
 *** =sct
@@ -78,7 +77,7 @@ vars <- (match_stats %>% summarise_each(funs(class)) %in% c("integer", "numeric"
 
 formula <- winner ~ .
 
-fit <- rpart(formula, data = match_stats[,var], method = "class")
+fit <- rpart(formula, data = match_stats[, vars], method = "class")
 
 fit
 ```
@@ -123,7 +122,7 @@ vars <- (match_stats %>% summarise_each(funs(class)) %in% c("integer", "numeric"
 
 formula <- factor(winner) ~ .
 
-fit <- randomForest(formula, data = match_stats[,var], ntree = 500)
+fit <- randomForest(formula, data = match_stats[,vars], ntree = 500)
 
 summary(fit)
 
