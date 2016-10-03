@@ -25,6 +25,7 @@ library(mice)
 library(dplyr)
 
 match_stats <- read.csv(file = "http://on-the-t.com/assets/data/match_stats.csv")
+match_stats <- match_stats[5000:nrow(match_stats),]
 ```
 
 *** =solution
